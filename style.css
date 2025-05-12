@@ -1,7 +1,8 @@
-/* Reset & base styles */
+/* Base Styles */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: linear-gradient(to bottom, #cbeffd 0%, #fffbe0 100%);
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
   color: #2c3e50;
   margin: 0;
   padding: 0;
@@ -10,21 +11,21 @@ body {
 /* Container */
 .container {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 3rem auto;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0.88); /* semi-transparent white */
   border-radius: 12px;
   border: 2px solid #fff0d1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Header */
+/* Headline */
 h1 {
   text-align: center;
-  color: #008080; /* Tropical teal */
+  font-family: 'Pacifico', cursive;
+  color: #008080;
+  font-size: 2.2rem;
   margin-bottom: 1.5rem;
-  font-size: 2rem;
 }
 
 /* Photo */
@@ -37,7 +38,7 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Text sections */
+/* Introduction and Call to Action */
 .intro,
 .cta {
   font-size: 1.1rem;
@@ -46,11 +47,11 @@ h1 {
   color: #2f4f4f;
 }
 
-/* Donor Link */
+/* Donor Link Button */
 .donor-link {
   display: block;
   text-align: center;
-  background: #ff7e6b; /* Coral */
+  background: #ff7e6b;
   color: white;
   padding: 0.9rem;
   border-radius: 8px;
@@ -64,7 +65,7 @@ h1 {
   background: #e96652;
 }
 
-/* Info section */
+/* Info Section */
 .info {
   margin-top: 2rem;
   padding-top: 1rem;
@@ -84,5 +85,14 @@ h1 {
 
 .info li {
   padding: 0.3rem 0;
+}
+
+/* Optional Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #336666;
+  font-style: italic;
 }
 
