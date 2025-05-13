@@ -1,8 +1,9 @@
 /* Base Styles */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
   background-size: cover;
+  background-attachment: scroll;
   color: #2c3e50;
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ body {
   max-width: 700px;
   margin: 3rem auto;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.70); /* semi-transparent white */
+  background: rgba(255, 255, 255, 0.72);
   border-radius: 12px;
   border: 2px solid #fff0d1;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -28,17 +29,24 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-/* Photo */
-.photo {
-  display: block;
-  margin: 0 auto 1.5rem auto;
-  width: 250px;
+/* Photo Gallery */
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.photo-gallery .photo {
+  width: 48%;
+  max-width: 250px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Introduction and Call to Action */
+/* Intro and CTA Paragraphs */
 .intro,
 .cta {
   font-size: 1.1rem;
@@ -87,7 +95,7 @@ h1 {
   padding: 0.3rem 0;
 }
 
-/* Optional Footer */
+/* Footer */
 footer {
   text-align: center;
   margin-top: 2rem;
@@ -96,3 +104,23 @@ footer {
   font-style: italic;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .photo-gallery .photo {
+    width: 100%;
+  }
+
+  .donor-link {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
