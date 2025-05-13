@@ -39,8 +39,8 @@ h1 {
 }
 
 .photo-gallery .photo {
-  width: 48%;
-  max-width: 250px;
+  flex: 1 1 45%;
+  max-width: 45%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -115,8 +115,13 @@ footer {
     font-size: 1.8rem;
   }
 
+  .photo-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .photo-gallery .photo {
-    width: 100%;
+    max-width: 100%;
   }
 
   .donor-link {
@@ -124,3 +129,4 @@ footer {
     padding: 0.8rem;
   }
 }
+
