@@ -134,18 +134,23 @@ footer {
 
   .photo-gallery .photo {
     width: 100%;
+    object-fit: cover; /* Ensures that images scale properly */
+  }
+
+  .top-photo img {
+    width: 100%; /* Makes sure the top image is the same size as bottom images */
+    height: auto; /* Ensures it keeps the correct aspect ratio */
+    object-fit: cover; /* Ensures it doesn’t stretch out */
+  }
+
+  .bottom-photos .photo {
+    width: 100%;
+    object-fit: cover; /* Ensures bottom images scale properly */
   }
 
   .donor-link {
     font-size: 1rem;
     padding: 0.8rem;
   }
-  
-  .bottom-photos .photo {
-    width: 100%;
-  }
-
-  .top-photo img {
-    width: 100%; 
-  }
 }
+
