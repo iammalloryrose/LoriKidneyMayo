@@ -48,7 +48,8 @@ h1 {
 
 /* Intro and CTA Paragraphs */
 .intro,
-.cta {
+.cta,
+.FAQ {
   text-indent: 2em;
   font-size: 1.1rem;
   margin-bottom: 1rem;
