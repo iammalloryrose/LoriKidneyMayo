@@ -31,11 +31,12 @@ h1 {
 
 /* Photo Gallery */
 .photo-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  flex: 1 1 auto;
+  max-width: 30%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .photo-gallery .photo {
