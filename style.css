@@ -46,7 +46,7 @@ h1 {
 .photo-gallery .photo {
   flex: 1 1 45%;
   max-width: 45%;
-  height: auto;
+  height: 250px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
